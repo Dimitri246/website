@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <title>Dimitri David – Développez votre visibilité en ligne</title>
+  <meta name="description" content="Google Business, avis clients, publicités Meta, réseaux sociaux et création de sites internet pour développer votre activité." />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico" />
+  <meta property="og:image" content="og-image.jpg" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html{scroll-behavior:smooth}
+    section[id]{scroll-margin-top:100px}
+    .glass{backdrop-filter:saturate(180%) blur(16px); background:rgba(255,255,255,.65)}
+    .reveal{opacity:0; transform:translateY(24px); transition:opacity .6s cubic-bezier(.2,.8,.2,1), transform .6s cubic-bezier(.2,.8,.2,1)}
+    .reveal.show{opacity:1; transform:translateY(0)}
+    .parallax{will-change:transform}
+    .nav a{transition:opacity .2s}
+    .nav a:hover{opacity:.85}
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <header class="sticky top-0 z-40">
+    <div class="glass border-b border-slate-200">
+      <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2 font-semibold tracking-tight hover:opacity-80">
+          <span>🌱 Dimitri David</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm nav">
+          <a href="index.html#services-overview">Les 3 leviers</a>
+          <a href="services.html">Services</a>
+          <a href="etudes.html">Études de cas</a>
+          <a href="offres.html">Offres</a>
+          <a href="index.html#contact" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-blue-600 text-white hover:bg-blue-700 transition">Me contacter</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-white"></div>
+    <div class="mx-auto max-w-6xl px-4 py-20 relative">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <p class="inline-flex items-center text-xs font-semibold uppercase tracking-wider text-blue-700 bg-blue-100 px-3 py-1 rounded-full">Disponible • Freelance</p>
+          <h1 class="mt-4 text-4xl md:text-5xl font-extrabold leading-tight">Développez votre visibilité et vos clients en ligne 🚀</h1>
+          <p class="mt-4 text-lg text-slate-600">Fiche Google optimisée, avis gérés, publicités Meta, réseaux sociaux, et sites web clairs qui convertissent.</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#services-overview" class="px-5 py-3 rounded-xl bg-blue-600 text-white font-medium hover:bg-blue-700">Découvrir les 3 leviers</a>
+            <a href="etudes.html" class="px-5 py-3 rounded-xl border border-slate-300 hover:border-slate-400">Voir des résultats</a>
+          </div>
+        </div>
+        <div class="md:pl-8">
+          <div class="aspect-[4/3] rounded-2xl shadow-xl bg-white p-6 flex flex-col justify-center items-center text-center parallax" data-parallax="12">
+            <h3 class="text-xl font-semibold">Des actions simples, mesurables</h3>
+            <p class="mt-3 text-slate-600 text-sm">On priorise l’impact : visibilité locale, trafic qualifié, conversions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Les 3 leviers -->
+  <section id="services-overview" class="py-10 md:py-24 bg-white">
+    <div class="mx-auto max-w-6xl px-4">
+      <header class="text-center max-w-3xl mx-auto">
+        <h2 class="text-3xl font-bold tracking-tight">Trois leviers pour attirer plus de clients</h2>
+        <p class="mt-3 text-slate-600">Des blocs clairs, illustrés, avec un défilement fluide.</p>
+      </header>
+
+      <!-- Google: image gauche, texte droite -->
+      <article id="gmb" class="mt-12 md:mt-16 grid md:grid-cols-2 gap-8 items-center">
+        <div class="order-1 md:order-1 reveal">
+          <div class="aspect-[4/3] rounded-2xl border bg-white p-6 flex items-center justify-center">
+            <svg viewBox="0 0 400 300" class="w-full h-full">
+              <rect x="20" y="20" width="360" height="260" rx="16" fill="#F8FAFC" stroke="#E2E8F0"/>
+              <rect x="40" y="50" width="240" height="24" rx="6" fill="#DBEAFE"/>
+              <rect x="40" y="90" width="160" height="12" rx="6" fill="#E2E8F0"/>
+              <rect x="40" y="110" width="200" height="12" rx="6" fill="#E2E8F0"/>
+              <rect x="40" y="140" width="120" height="32" rx="8" fill="#93C5FD"/>
+              <circle cx="320" cy="110" r="36" fill="#BFDBFE"/>
+            </svg>
+          </div>
+        </div>
+        <div class="order-2 md:order-2 reveal">
+          <h3 class="text-2xl font-semibold">Boost de votre page Google (ex‑GMB)</h3>
+          <p class="mt-2 text-slate-600">Quand on vous cherche, Google affiche votre fiche. Optimisée et vivante, elle génère plus de clics vers votre site, d’appels et de demandes d’itinéraires.</p>
+          <ul class="mt-3 text-slate-700 list-disc pl-5 space-y-1">
+            <li><strong>Visibilité locale</strong> : plus d’impressions sur « près de moi ».</li>
+            <li><strong>Confiance</strong> : infos à jour, photos, catégories & attributs pertinents.</li>
+            <li><strong>Avis</strong> : réponses pro & empathiques, + incitation aux avis positifs.</li>
+          </ul>
+          <div class="mt-4 text-sm text-slate-600">Inclus : audit, optimisation, posts Google, suivi des KPIs (vues, clics, appels).</div>
+          <div class="mt-5 flex gap-3">
+            <a href="offres.html" class="px-4 py-2 rounded-lg bg-blue-600 text-white">Voir les offres</a>
+            <a href="services.html" class="px-4 py-2 rounded-lg border">Détails du service</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Social: texte gauche, image droite -->
+      <article id="social" class="mt-16 grid md:grid-cols-2 gap-8 items-center">
+        <div class="order-1 reveal">
+          <h3 class="text-2xl font-semibold">Réseaux sociaux & publicités Meta</h3>
+          <p class="mt-2 text-slate-600">Vos clients sont sur Facebook et Instagram. Des campagnes simples et une présence régulière amènent du trafic qualifié et des demandes concrètes.</p>
+          <ul class="mt-3 text-slate-700 list-disc pl-5 space-y-1">
+            <li><strong>Trafic</strong> : ciblages locaux, messages clairs, visuels utiles.</li>
+            <li><strong>Récurrence</strong> : calendrier éditorial, réponses aux messages.</li>
+            <li><strong>Mesure</strong> : clics, prospects, prises de contact.</li>
+          </ul>
+          <div class="mt-4 text-sm text-slate-600">Inclus : setup campagnes Meta, A/B tests légers, optimisation hebdo, reporting lisible.</div>
+          <div class="mt-5 flex gap-3">
+            <a href="offres.html" class="px-4 py-2 rounded-lg bg-blue-600 text-white">Voir les offres</a>
+            <a href="services.html" class="px-4 py-2 rounded-lg border">Détails du service</a>
+          </div>
+        </div>
+        <div class="order-2 reveal">
+          <div class="aspect-[4/3] rounded-2xl border bg-white p-6 flex items-center justify-center">
+            <svg viewBox="0 0 400 300" class="w-full h-full">
+              <rect x="20" y="20" width="360" height="260" rx="16" fill="#F8FAFC" stroke="#E2E8F0"/>
+              <rect x="40" y="60" width="120" height="16" rx="6" fill="#E2E8F0"/>
+              <rect x="40" y="90" width="320" height="10" rx="5" fill="#E2E8F0"/>
+              <rect x="40" y="110" width="300" height="10" rx="5" fill="#E2E8F0"/>
+              <rect x="40" y="140" width="140" height="90" rx="10" fill="#DBEAFE"/>
+              <rect x="200" y="140" width="160" height="90" rx="10" fill="#BFDBFE"/>
+            </svg>
+          </div>
+        </div>
+      </article>
+
+      <!-- Site: texte droite, image gauche -->
+      <article id="site" class="mt-16 grid md:grid-cols-2 gap-8 items-center">
+        <div class="order-1 md:order-1 reveal">
+          <div class="aspect-[4/3] rounded-2xl border bg-white p-6 flex items-center justify-center">
+            <svg viewBox="0 0 400 300" class="w-full h-full">
+              <rect x="20" y="20" width="360" height="260" rx="16" fill="#F8FAFC" stroke="#E2E8F0"/>
+              <rect x="40" y="50" width="280" height="18" rx="6" fill="#E2E8F0"/>
+              <rect x="40" y="80" width="320" height="10" rx="5" fill="#E2E8F0"/>
+              <rect x="40" y="100" width="180" height="10" rx="5" fill="#E2E8F0"/>
+              <rect x="40" y="130" width="320" height="120" rx="10" fill="#DBEAFE"/>
+            </svg>
+          </div>
+        </div>
+        <div class="order-2 md:order-2 reveal">
+          <h3 class="text-2xl font-semibold">Création de site internet</h3>
+          <p class="mt-2 text-slate-600">Votre site est la vitrine finale : clair, rapide et mobile‑first, il transforme les visites en prises de contact.</p>
+          <ul class="mt-3 text-slate-700 list-disc pl-5 space-y-1">
+            <li><strong>Crédibilité</strong> : structure simple, informations essentielles.</li>
+            <li><strong>Conversion</strong> : appels‑à‑l’action visibles, formulaires courts.</li>
+            <li><strong>Performance</strong> : chargement rapide et analytics.</li>
+          </ul>
+          <div class="mt-4 text-sm text-slate-600">Inclus : site clé en main (vitrine/landing), design moderne, formulaires & analytics, hébergement GitHub Pages.</div>
+          <div class="mt-5 flex gap-3">
+            <a href="offres.html" class="px-4 py-2 rounded-lg bg-blue-600 text-white">Voir les offres</a>
+            <a href="services.html" class="px-4 py-2 rounded-lg border">Détails du service</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-slate-100">
+    <div class="mx-auto max-w-6xl px-4">
+      <div class="rounded-2xl border bg-white p-6 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6 reveal">
+        <div>
+          <h3 class="text-xl font-semibold">Besoin d’un plan simple pour les 30 prochains jours ?</h3>
+          <p class="text-slate-600">Je vous propose un audit express et une feuille de route concrète.</p>
+        </div>
+        <a href="offres.html" class="px-5 py-3 rounded-xl bg-blue-600 text-white font-medium hover:bg-blue-700">Voir les offres</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="mx-auto max-w-3xl px-4">
+      <h2 class="text-3xl font-bold tracking-tight text-center">Contact</h2>
+      <p class="mt-2 text-center text-slate-600">Expliquez votre besoin en 2 minutes et je reviens vers vous sous 24h.</p>
+      <form action="https://formspree.io/f/your-id" method="POST" class="mt-10 space-y-4 bg-slate-50 p-6 rounded-2xl border">
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <label class="text-sm text-slate-600">Nom</label>
+            <input required name="nom" class="mt-1 w-full rounded-xl border px-3 py-2" />
+          </div>
+          <div>
+            <label class="text-sm text-slate-600">Email</label>
+            <input required type="email" name="email" class="mt-1 w-full rounded-xl border px-3 py-2" />
+          </div>
+        </div>
+        <div>
+          <label class="text-sm text-slate-600">Sujet</label>
+          <input name="sujet" class="mt-1 w-full rounded-xl border px-3 py-2" />
+        </div>
+        <div>
+          <label class="text-sm text-slate-600">Message</label>
+          <textarea required name="message" rows="5" class="mt-1 w-full rounded-xl border px-3 py-2"></textarea>
+        </div>
+        <button class="w-full md:w-auto px-6 py-3 rounded-xl bg-blue-600 text-white font-medium hover:bg-blue-700">Envoyer</button>
+        <p class="text-xs text-slate-500">En envoyant ce formulaire, vous acceptez d’être recontacté. RGPD compliant.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="py-10 border-t bg-slate-50">
+    <div class="mx-auto max-w-6xl px-4 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-600">
+      <div>© <span id="year"></span> Dimitri David. Tous droits réservés.</div>
+      <div class="flex items-center gap-4">
+        <a href="#services-overview" class="hover:text-blue-600">Les 3 leviers</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const io = new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('show')}})}, {{threshold: 0.12}});
+    document.querySelectorAll('.reveal').forEach(function(el){{io.observe(el)}});
+    function onScroll(){{const y=window.scrollY; document.querySelectorAll('[data-parallax]').forEach(function(el){{const d=parseFloat(el.dataset.parallax)||10; el.style.transform='translateY('+(y/d)+'px)';}});}}
+    window.addEventListener('scroll', onScroll, {{passive:true}});
+  </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <title>Services – Dimitri David</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico" />
+  <meta property="og:image" content="og-image.jpg" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html{scroll-behavior:smooth}
+    section[id]{scroll-margin-top:100px}
+    .glass{backdrop-filter:saturate(180%) blur(16px); background:rgba(255,255,255,.65)}
+    .reveal{opacity:0; transform:translateY(24px); transition:opacity .6s cubic-bezier(.2,.8,.2,1), transform .6s cubic-bezier(.2,.8,.2,1)}
+    .reveal.show{opacity:1; transform:translateY(0)}
+    .parallax{will-change:transform}
+    .nav a{transition:opacity .2s}
+    .nav a:hover{opacity:.85}
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <header class="sticky top-0 z-40">
+    <div class="glass border-b border-slate-200">
+      <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2 font-semibold tracking-tight hover:opacity-80">
+          <span>🌱 Dimitri David</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm nav">
+          <a href="index.html#services-overview">Les 3 leviers</a>
+          <a href="services.html">Services</a>
+          <a href="etudes.html">Études de cas</a>
+          <a href="offres.html">Offres</a>
+          <a href="index.html#contact" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-blue-600 text-white hover:bg-blue-700 transition">Me contacter</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-6xl px-4 py-12">
+    <h1 class="text-3xl font-bold">Services</h1>
+    <p class="mt-2 text-slate-600">Des prestations simples et concrètes pour développer votre activité.</p>
+
+    <section class="mt-8 grid md:grid-cols-2 gap-6">
+      <article class="rounded-2xl border bg-white p-6">
+        <h2 class="text-xl font-semibold">Boost de votre page Google (ex‑GMB)</h2>
+        <p class="mt-2 text-slate-600">Audit et optimisation complète : catégories, description, photos, posts, Q/R, suivi KPIs.</p>
+        <ul class="mt-3 text-sm list-disc pl-5 space-y-1 text-slate-700">
+          <li>Apparitions « près de moi »</li>
+          <li>Plus d’appels et d’itinéraires</li>
+          <li>Plan éditorial Google Posts</li>
+        </ul>
+      </article>
+      <article class="rounded-2xl border bg-white p-6">
+        <h2 class="text-xl font-semibold">Réponses aux avis Google</h2>
+        <p class="mt-2 text-slate-600">Ligne éditoriale claire, réponses pro et empathiques, traitement hebdo, rapport.</p>
+      </article>
+      <article class="rounded-2xl border bg-white p-6">
+        <h2 class="text-xl font-semibold">Publicités Meta (Facebook & Instagram)</h2>
+        <p class="mt-2 text-slate-600">Campagnes locales efficaces : ciblages simples, messages clairs, A/B tests légers.</p>
+      </article>
+      <article class="rounded-2xl border bg-white p-6">
+        <h2 class="text-xl font-semibold">Gestion des réseaux sociaux</h2>
+        <p class="mt-2 text-slate-600">Calendrier éditorial, publications, réponses de base, automatisations simples.</p>
+      </article>
+      <article class="rounded-2xl border bg-white p-6 md:col-span-2">
+        <h2 class="text-xl font-semibold">Création de site internet</h2>
+        <p class="mt-2 text-slate-600">Site vitrine/landing page rapide, mobile‑first, formulaires courts, analytics.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="py-10 border-t bg-slate-50">
+    <div class="mx-auto max-w-6xl px-4 text-sm text-slate-600">© <span id="y1"></span> Dimitri David.</div>
+  </footer>
+  <script>document.getElementById('y1').textContent=new Date().getFullYear()</script>
+</body>
+</html>

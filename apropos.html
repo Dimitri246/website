@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <title>À propos – Dimitri David</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico" />
+  <meta property="og:image" content="og-image.jpg" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html{scroll-behavior:smooth}
+    section[id]{scroll-margin-top:100px}
+    .glass{backdrop-filter:saturate(180%) blur(16px); background:rgba(255,255,255,.65)}
+    .reveal{opacity:0; transform:translateY(24px); transition:opacity .6s cubic-bezier(.2,.8,.2,1), transform .6s cubic-bezier(.2,.8,.2,1)}
+    .reveal.show{opacity:1; transform:translateY(0)}
+    .parallax{will-change:transform}
+    .nav a{transition:opacity .2s}
+    .nav a:hover{opacity:.85}
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <header class="sticky top-0 z-40">
+    <div class="glass border-b border-slate-200">
+      <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2 font-semibold tracking-tight hover:opacity-80">
+          <span>🌱 Dimitri David</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm nav">
+          <a href="index.html#services-overview">Les 3 leviers</a>
+          <a href="services.html">Services</a>
+          <a href="etudes.html">Études de cas</a>
+          <a href="offres.html">Offres</a>
+          <a href="index.html#contact" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-blue-600 text-white hover:bg-blue-700 transition">Me contacter</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-6xl px-4 py-12">
+    <h1 class="text-3xl font-bold">À propos</h1>
+    <p class="mt-2 text-slate-600">Mon approche est simple : clarté, pragmatisme, mesure.</p>
+
+    <section class="mt-8 grid md:grid-cols-3 gap-6">
+      <article class="rounded-2xl border bg-white p-6">
+        <h2 class="font-semibold">Clarté</h2>
+        <p class="mt-2 text-slate-600 text-sm">Des actions compréhensibles par tous : fiche Google, avis, publicités locales, site clair. Pas de jargon inutile.</p>
+      </article>
+      <article class="rounded-2xl border bg-white p-6">
+        <h2 class="font-semibold">Pragmatisme</h2>
+        <p class="mt-2 text-slate-600 text-sm">On priorise ce qui a le plus d’impact immédiat, puis on améliore pas à pas.</p>
+      </article>
+      <article class="rounded-2xl border bg-white p-6">
+        <h2 class="font-semibold">Mesure</h2>
+        <p class="mt-2 text-slate-600 text-sm">Des indicateurs simples : vues, clics, appels, formulaires envoyés. Vous voyez la progression.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="py-10 border-t bg-slate-50">
+    <div class="mx-auto max-w-6xl px-4 text-sm text-slate-600">© <span id="y4"></span> Dimitri David.</div>
+  </footer>
+  <script>document.getElementById('y4').textContent=new Date().getFullYear()</script>
+</body>
+</html>
