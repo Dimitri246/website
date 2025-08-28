@@ -92,10 +92,9 @@
             <li><strong>Avis</strong> : réponses pro & empathiques, + incitation aux avis positifs.</li>
           </ul>
           <div class="mt-4 text-sm text-slate-600">Inclus : audit, optimisation, posts Google, suivi des KPIs (vues, clics, appels).</div>
-          <div class="mt-5 flex gap-3">
-            <a href="#offres" class="px-4 py-2 rounded-lg bg-blue-600 text-white">Voir les offres</a>
-            <a href="#services" class="px-4 py-2 rounded-lg border">Détails du service</a>
-          </div>
+            <div class="mt-5 flex gap-3">
+              <a href="#offres" class="px-4 py-2 rounded-lg bg-blue-600 text-white">Voir les offres</a>
+            </div>
         </div>
       </article>
 
@@ -110,10 +109,9 @@
             <li><strong>Mesure</strong> : clics, prospects, prises de contact.</li>
           </ul>
           <div class="mt-4 text-sm text-slate-600">Inclus : setup campagnes Meta, A/B tests légers, optimisation hebdo, reporting lisible.</div>
-          <div class="mt-5 flex gap-3">
-            <a href="#offres" class="px-4 py-2 rounded-lg bg-blue-600 text-white">Voir les offres</a>
-            <a href="#services" class="px-4 py-2 rounded-lg border">Détails du service</a>
-          </div>
+            <div class="mt-5 flex gap-3">
+              <a href="#offres" class="px-4 py-2 rounded-lg bg-blue-600 text-white">Voir les offres</a>
+            </div>
         </div>
         <div class="order-2 reveal">
           <div class="aspect-[4/3] rounded-2xl border bg-white p-6 flex items-center justify-center">
@@ -151,10 +149,9 @@
             <li><strong>Performance</strong> : chargement rapide et analytics.</li>
           </ul>
           <div class="mt-4 text-sm text-slate-600">Inclus : site clé en main (vitrine/landing), design moderne, formulaires & analytics, hébergement GitHub Pages.</div>
-          <div class="mt-5 flex gap-3">
-            <a href="#offres" class="px-4 py-2 rounded-lg bg-blue-600 text-white">Voir les offres</a>
-            <a href="#services" class="px-4 py-2 rounded-lg border">Détails du service</a>
-          </div>
+            <div class="mt-5 flex gap-3">
+              <a href="#offres" class="px-4 py-2 rounded-lg bg-blue-600 text-white">Voir les offres</a>
+            </div>
         </div>
       </article>
     </div>
@@ -169,33 +166,99 @@
       </header>
       <div class="mt-8 grid md:grid-cols-2 gap-6">
         <article class="rounded-2xl border bg-white p-6 reveal">
+          <h3 class="text-xl font-semibold">Audit de vos pages & réseaux sociaux</h3>
+          <p class="mt-2 text-slate-600">Analyse rapide de votre présence en ligne pour détecter points forts et axes d’amélioration.</p>
+          <button class="mt-4 px-3 py-2 rounded-lg border text-sm" onclick="openModal('modal-audit')">Détails</button>
+        </article>
+        <article class="rounded-2xl border bg-white p-6 reveal">
           <h3 class="text-xl font-semibold">Boost de votre page Google (ex‑GMB)</h3>
-          <p class="mt-2 text-slate-600">Audit et optimisation complète : catégories, description, photos, posts, Q/R, suivi KPIs.</p>
+          <p class="mt-2 text-slate-600">Audit complet, optimisation des catégories, description, photos, posts et suivi des indicateurs clés.</p>
           <ul class="mt-3 text-sm list-disc pl-5 space-y-1 text-slate-700">
             <li>Apparitions « près de moi »</li>
             <li>Plus d’appels et d’itinéraires</li>
             <li>Plan éditorial Google Posts</li>
           </ul>
+          <button class="mt-4 px-3 py-2 rounded-lg border text-sm" onclick="openModal('modal-gmb')">Détails</button>
         </article>
         <article class="rounded-2xl border bg-white p-6 reveal">
           <h3 class="text-xl font-semibold">Réponses aux avis Google</h3>
-          <p class="mt-2 text-slate-600">Ligne éditoriale claire, réponses pro et empathiques, traitement hebdo, rapport.</p>
+          <p class="mt-2 text-slate-600">Ligne éditoriale claire, réponses professionnelles et empathiques, transformation des avis en atouts.</p>
+          <button class="mt-4 px-3 py-2 rounded-lg border text-sm" onclick="openModal('modal-avis')">Détails</button>
         </article>
         <article class="rounded-2xl border bg-white p-6 reveal">
           <h3 class="text-xl font-semibold">Publicités Meta (Facebook & Instagram)</h3>
-          <p class="mt-2 text-slate-600">Campagnes locales efficaces : ciblages simples, messages clairs, A/B tests légers.</p>
+          <p class="mt-2 text-slate-600">Campagnes locales efficaces, ciblages pertinents, tests réguliers et reporting lisible.</p>
+          <button class="mt-4 px-3 py-2 rounded-lg border text-sm" onclick="openModal('modal-meta')">Détails</button>
         </article>
         <article class="rounded-2xl border bg-white p-6 reveal">
           <h3 class="text-xl font-semibold">Gestion des réseaux sociaux</h3>
-          <p class="mt-2 text-slate-600">Calendrier éditorial, publications, réponses de base, automatisations simples.</p>
+          <p class="mt-2 text-slate-600">Publications régulières, réponses de base et automatisations simples pour garder le contact.</p>
+          <button class="mt-4 px-3 py-2 rounded-lg border text-sm" onclick="openModal('modal-gestion')">Détails</button>
+        </article>
+        <article class="rounded-2xl border bg-white p-6 reveal">
+          <h3 class="text-xl font-semibold">Conseils & calendrier éditorial</h3>
+          <p class="mt-2 text-slate-600">Accompagnement pour planifier vos contenus : idées, formats, fréquence et organisation sur un mois.</p>
+          <button class="mt-4 px-3 py-2 rounded-lg border text-sm" onclick="openModal('modal-calendrier')">Détails</button>
         </article>
         <article class="rounded-2xl border bg-white p-6 md:col-span-2 reveal">
           <h3 class="text-xl font-semibold">Création de site internet</h3>
-          <p class="mt-2 text-slate-600">Site vitrine/landing page rapide, mobile‑first, formulaires courts, analytics.</p>
+          <p class="mt-2 text-slate-600">Site vitrine/landing page rapide, mobile‑first, formulaires courts, analytics et hébergement inclus.</p>
+          <button class="mt-4 px-3 py-2 rounded-lg border text-sm" onclick="openModal('modal-site')">Détails</button>
         </article>
       </div>
     </div>
   </section>
+
+  <!-- Modals services -->
+  <div id="modal-audit" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 p-4">
+    <div class="bg-white p-6 rounded-xl max-w-md w-full">
+      <h3 class="text-xl font-semibold">Audit de vos pages & réseaux sociaux</h3>
+      <p class="mt-2 text-slate-600 text-sm">Revue éclair de vos pages web et profils sociaux avec un rapport synthétique pour savoir où agir.</p>
+      <button class="mt-4 px-4 py-2 rounded-lg bg-blue-600 text-white" onclick="closeModal('modal-audit')">Fermer</button>
+    </div>
+  </div>
+  <div id="modal-gmb" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 p-4">
+    <div class="bg-white p-6 rounded-xl max-w-md w-full">
+      <h3 class="text-xl font-semibold">Boost de votre page Google</h3>
+      <p class="mt-2 text-slate-600 text-sm">Détails des optimisations : choix de catégories, rédaction, visuels et mise en place d’un suivi mensuel.</p>
+      <button class="mt-4 px-4 py-2 rounded-lg bg-blue-600 text-white" onclick="closeModal('modal-gmb')">Fermer</button>
+    </div>
+  </div>
+  <div id="modal-avis" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 p-4">
+    <div class="bg-white p-6 rounded-xl max-w-md w-full">
+      <h3 class="text-xl font-semibold">Réponses aux avis Google</h3>
+      <p class="mt-2 text-slate-600 text-sm">Gestion hebdomadaire, ton adapté selon les situations et mise en avant des retours positifs.</p>
+      <button class="mt-4 px-4 py-2 rounded-lg bg-blue-600 text-white" onclick="closeModal('modal-avis')">Fermer</button>
+    </div>
+  </div>
+  <div id="modal-meta" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 p-4">
+    <div class="bg-white p-6 rounded-xl max-w-md w-full">
+      <h3 class="text-xl font-semibold">Publicités Meta</h3>
+      <p class="mt-2 text-slate-600 text-sm">Création et optimisation de campagnes Meta avec tests d’audiences et messages pour générer des prospects.</p>
+      <button class="mt-4 px-4 py-2 rounded-lg bg-blue-600 text-white" onclick="closeModal('modal-meta')">Fermer</button>
+    </div>
+  </div>
+  <div id="modal-gestion" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 p-4">
+    <div class="bg-white p-6 rounded-xl max-w-md w-full">
+      <h3 class="text-xl font-semibold">Gestion des réseaux sociaux</h3>
+      <p class="mt-2 text-slate-600 text-sm">Publication de contenus, animation de communauté et surveillance des messages privés.</p>
+      <button class="mt-4 px-4 py-2 rounded-lg bg-blue-600 text-white" onclick="closeModal('modal-gestion')">Fermer</button>
+    </div>
+  </div>
+  <div id="modal-calendrier" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 p-4">
+    <div class="bg-white p-6 rounded-xl max-w-md w-full">
+      <h3 class="text-xl font-semibold">Conseils & calendrier éditorial</h3>
+      <p class="mt-2 text-slate-600 text-sm">Ateliers pour définir vos objectifs puis création d’un planning éditorial personnalisé pour un mois.</p>
+      <button class="mt-4 px-4 py-2 rounded-lg bg-blue-600 text-white" onclick="closeModal('modal-calendrier')">Fermer</button>
+    </div>
+  </div>
+  <div id="modal-site" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 p-4">
+    <div class="bg-white p-6 rounded-xl max-w-md w-full">
+      <h3 class="text-xl font-semibold">Création de site internet</h3>
+      <p class="mt-2 text-slate-600 text-sm">Conception, développement et mise en ligne d’un site léger optimisé pour convertir vos visiteurs.</p>
+      <button class="mt-4 px-4 py-2 rounded-lg bg-blue-600 text-white" onclick="closeModal('modal-site')">Fermer</button>
+    </div>
+  </div>
 
   <!-- Études de cas -->
   <section id="etudes" class="py-16 bg-white">
@@ -231,7 +294,13 @@
         <h2 class="text-3xl font-bold tracking-tight">Offres</h2>
         <p class="mt-3 text-slate-600">Transparence et flexibilité selon vos besoins.</p>
       </header>
-      <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <article class="rounded-2xl border bg-white p-6 reveal">
+          <div class="text-xs uppercase text-slate-500">Découverte</div>
+          <h3 class="mt-1 font-semibold text-lg">Audit rapide</h3>
+          <div class="mt-4 text-3xl font-extrabold">0€ <span class="text-base font-normal text-slate-500">HT</span></div>
+          <a href="#contact" class="mt-6 inline-block px-4 py-2 rounded-lg bg-blue-600 text-white text-sm hover:bg-blue-700">Demander</a>
+        </article>
         <article class="rounded-2xl border bg-white p-6 reveal">
           <div class="text-xs uppercase text-slate-500">Diagnostic</div>
           <h3 class="mt-1 font-semibold text-lg">Audit Express 72h</h3>
@@ -312,9 +381,15 @@
       <div>© <span id="year"></span> Dimitri David. Tous droits réservés.</div>
       <div class="flex items-center gap-4">
         <a href="#services-overview" class="hover:text-blue-600">Les 3 leviers</a>
+        <a href="mentions-legales.html" class="hover:text-blue-600">Mentions légales</a>
       </div>
     </div>
   </footer>
+
+  <div id="cookie-banner" class="fixed bottom-0 inset-x-0 bg-slate-900 text-white p-4 flex items-center justify-between hidden">
+    <p class="text-sm">Ce site utilise des cookies pour améliorer votre expérience.</p>
+    <button class="ml-4 px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-sm" onclick="acceptCookies()">Accepter</button>
+  </div>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
@@ -322,6 +397,10 @@
     document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
     function onScroll(){const y=window.scrollY; document.querySelectorAll('[data-parallax]').forEach(function(el){const d=parseFloat(el.dataset.parallax)||10; el.style.transform='translateY('+(y/d)+'px)';});}
     window.addEventListener('scroll', onScroll, {passive:true});
+    function openModal(id){document.getElementById(id).classList.remove('hidden');}
+    function closeModal(id){document.getElementById(id).classList.add('hidden');}
+    function acceptCookies(){localStorage.setItem('cookies-accepted','1');document.getElementById('cookie-banner').classList.add('hidden');}
+    if(!localStorage.getItem('cookies-accepted')){document.getElementById('cookie-banner').classList.remove('hidden');}
   </script>
 </body>
 </html>
