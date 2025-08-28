@@ -318,10 +318,10 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-    const io = new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('show')}})}, {{threshold: 0.12}});
-    document.querySelectorAll('.reveal').forEach(function(el){{io.observe(el)}});
-    function onScroll(){{const y=window.scrollY; document.querySelectorAll('[data-parallax]').forEach(function(el){{const d=parseFloat(el.dataset.parallax)||10; el.style.transform='translateY('+(y/d)+'px)';}});}}
-    window.addEventListener('scroll', onScroll, {{passive:true}});
+    const io = new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('show')}})}, {threshold: 0.12});
+    document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+    function onScroll(){const y=window.scrollY; document.querySelectorAll('[data-parallax]').forEach(function(el){const d=parseFloat(el.dataset.parallax)||10; el.style.transform='translateY('+(y/d)+'px)';});}
+    window.addEventListener('scroll', onScroll, {passive:true});
   </script>
 </body>
 </html>
