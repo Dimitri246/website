@@ -52,9 +52,8 @@
           </div>
         </div>
         <div class="md:pl-8">
-          <div class="aspect-[4/3] rounded-2xl shadow-xl bg-white p-6 flex flex-col justify-center items-center text-center parallax" data-parallax="12">
-            <h3 class="text-xl font-semibold">Des actions simples, mesurables</h3>
-            <p class="mt-3 text-slate-600 text-sm">On priorise l’impact : visibilité locale, trafic qualifié, conversions.</p>
+          <div class="aspect-[4/3] rounded-2xl shadow-xl overflow-hidden parallax" data-parallax="12">
+            <img src="assets/accueil.png" alt="Illustration accueil" class="w-full h-full object-cover" />
           </div>
         </div>
       </div>
@@ -73,7 +72,7 @@
       <article id="gmb" class="mt-12 md:mt-16 grid md:grid-cols-2 gap-8 items-center">
         <div class="order-1 md:order-1 reveal">
           <div class="aspect-[4/3] rounded-2xl border bg-white p-6 flex items-center justify-center">
-            <img src="assets/img.gmb.png" alt="Illustration boost page Google" class="w-full h-full object-cover" />
+            <img src="assets/Google.png" alt="Illustration boost page Google" class="w-full h-full object-cover" />
           </div>
         </div>
         <div class="order-2 md:order-2 reveal">
@@ -108,7 +107,7 @@
         </div>
         <div class="order-2 reveal">
           <div class="aspect-[4/3] rounded-2xl border bg-white p-6 flex items-center justify-center">
-            <img src="assets/img.rs.png" alt="Illustration réseaux sociaux" class="w-full h-full object-cover" />
+            <img src="assets/RS.png" alt="Illustration réseaux sociaux" class="w-full h-full object-cover" />
           </div>
         </div>
       </article>
@@ -117,7 +116,7 @@
       <article id="site" class="mt-16 grid md:grid-cols-2 gap-8 items-center">
         <div class="order-1 md:order-1 reveal">
           <div class="aspect-[4/3] rounded-2xl border bg-white p-6 flex items-center justify-center">
-            <img src="assets/img.website.png" alt="Illustration création de site internet" class="w-full h-full object-cover" />
+            <img src="assets/Website.png" alt="Illustration création de site internet" class="w-full h-full object-cover" />
           </div>
         </div>
         <div class="order-2 md:order-2 reveal">
@@ -190,52 +189,88 @@
   </section>
 
   <!-- Modals services -->
-  <div id="modal-audit" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 p-4">
-    <div class="bg-white p-6 rounded-xl max-w-md w-full">
+  <div id="modal-audit" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black/50 p-4">
+    <div class="bg-white p-8 rounded-xl max-w-xl w-full">
       <h3 class="text-xl font-semibold">Audit de vos pages & réseaux sociaux</h3>
-      <p class="mt-2 text-slate-600 text-sm">Revue éclair de vos pages web et profils sociaux avec un rapport synthétique pour savoir où agir.</p>
+      <p class="mt-2 text-slate-600 text-sm">Ce que vous obtenez : Une évaluation rapide et claire de votre présence en ligne (site web et réseaux sociaux). Nous identifions vos forces & axes d’amélioration, pour une stratégie digitale plus pertinente et impactante.</p>
+      <ul class="mt-2 text-slate-600 text-sm list-disc pl-5 space-y-1">
+        <li>Rapidité & clarté : rapport synthétique et facile à exploiter.</li>
+        <li>Diagnostic immédiat : visibilité, cohérence de la communication, engagement.</li>
+        <li>Actions ciblées : recommandations concrètes pour améliorer votre performance dès les premières semaines.</li>
+      </ul>
       <button class="mt-4 px-4 py-2 rounded-lg bg-blue-600 text-white" onclick="closeModal('modal-audit')">Fermer</button>
     </div>
   </div>
-  <div id="modal-gmb" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 p-4">
-    <div class="bg-white p-6 rounded-xl max-w-md w-full">
+  <div id="modal-gmb" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black/50 p-4">
+    <div class="bg-white p-8 rounded-xl max-w-xl w-full">
       <h3 class="text-xl font-semibold">Boost de votre page Google</h3>
-      <p class="mt-2 text-slate-600 text-sm">Détails des optimisations : choix de catégories, rédaction, visuels et mise en place d’un suivi mensuel.</p>
+      <p class="mt-2 text-slate-600 text-sm">Ce que je propose : Service complet d’optimisation de votre fiche Google Business Profile pour capter des clients de proximité et renforcer votre crédibilité.</p>
+      <ul class="mt-2 text-slate-600 text-sm list-disc pl-5 space-y-1">
+        <li>Visibilité locale renforcée : amélioration de l’apparition sur les requêtes « près de moi ».</li>
+        <li>Contenu à jour & attractif : catégories pertinentes, photos optimisées, description stratégique.</li>
+        <li>Engagement maîtrisé : posts réguliers, suivi des KPI : vues, clics, appels, itinéraires.</li>
+      </ul>
       <button class="mt-4 px-4 py-2 rounded-lg bg-blue-600 text-white" onclick="closeModal('modal-gmb')">Fermer</button>
     </div>
   </div>
-  <div id="modal-avis" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 p-4">
-    <div class="bg-white p-6 rounded-xl max-w-md w-full">
+  <div id="modal-avis" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black/50 p-4">
+    <div class="bg-white p-8 rounded-xl max-w-xl w-full">
       <h3 class="text-xl font-semibold">Réponses aux avis Google</h3>
-      <p class="mt-2 text-slate-600 text-sm">Gestion hebdomadaire, ton adapté selon les situations et mise en avant des retours positifs.</p>
+      <p class="mt-2 text-slate-600 text-sm">Ce service vous aide à : transformer les avis clients en leviers de confiance et d’amélioration continue.</p>
+      <ul class="mt-2 text-slate-600 text-sm list-disc pl-5 space-y-1">
+        <li>Ligne éditoriale claire : ton professionnel et empathique, adapté à chaque situation.</li>
+        <li>Dynamiser votre réputation : valorisation des retours positifs et traitement RSS (Résolution des Sujets Sensibles).</li>
+        <li>Fidélisation renforcée : les réponses montrent que vous êtes à l’écoute et proactifs.</li>
+      </ul>
       <button class="mt-4 px-4 py-2 rounded-lg bg-blue-600 text-white" onclick="closeModal('modal-avis')">Fermer</button>
     </div>
   </div>
-  <div id="modal-meta" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 p-4">
-    <div class="bg-white p-6 rounded-xl max-w-md w-full">
+  <div id="modal-meta" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black/50 p-4">
+    <div class="bg-white p-8 rounded-xl max-w-xl w-full">
       <h3 class="text-xl font-semibold">Publicités Meta</h3>
-      <p class="mt-2 text-slate-600 text-sm">Création et optimisation de campagnes Meta avec tests d’audiences et messages pour générer des prospects.</p>
+      <p class="mt-2 text-slate-600 text-sm">Ce que je réalise pour vous : des campagnes publicitaires ciblées, performantes et transparentes sur Facebook & Instagram.</p>
+      <ul class="mt-2 text-slate-600 text-sm list-disc pl-5 space-y-1">
+        <li>Ciblages locaux pertinents : vos villages ou zones prioritaires.</li>
+        <li>Visuels impactants & messages clairs : adaptés à votre audience locale.</li>
+        <li>Tests & itérations : A/B tests simplifiés, optimisation hebdomadaire.</li>
+        <li>Reporting transparent : suivi des clics, prospects et conversions via des tableaux lisibles.</li>
+      </ul>
       <button class="mt-4 px-4 py-2 rounded-lg bg-blue-600 text-white" onclick="closeModal('modal-meta')">Fermer</button>
     </div>
   </div>
-  <div id="modal-gestion" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 p-4">
-    <div class="bg-white p-6 rounded-xl max-w-md w-full">
+  <div id="modal-gestion" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black/50 p-4">
+    <div class="bg-white p-8 rounded-xl max-w-xl w-full">
       <h3 class="text-xl font-semibold">Gestion des réseaux sociaux</h3>
-      <p class="mt-2 text-slate-600 text-sm">Publication de contenus, animation de communauté et surveillance des messages privés.</p>
+      <p class="mt-2 text-slate-600 text-sm">L’offre inclut : animation régulière de votre écosystème digital, création de lien et maintien de votre présence.</p>
+      <ul class="mt-2 text-slate-600 text-sm list-disc pl-5 space-y-1">
+        <li>Publications régulières : contenu engageant et cohérent avec votre univers.</li>
+        <li>Interactions fluides : réponses aux messages et commentaires, avec un ton adapté.</li>
+        <li>Automatisation simple : outils basiques pour gagner du temps sans perdre de réactivité.</li>
+      </ul>
       <button class="mt-4 px-4 py-2 rounded-lg bg-blue-600 text-white" onclick="closeModal('modal-gestion')">Fermer</button>
     </div>
   </div>
-  <div id="modal-calendrier" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 p-4">
-    <div class="bg-white p-6 rounded-xl max-w-md w-full">
+  <div id="modal-calendrier" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black/50 p-4">
+    <div class="bg-white p-8 rounded-xl max-w-xl w-full">
       <h3 class="text-xl font-semibold">Conseils & calendrier éditorial</h3>
-      <p class="mt-2 text-slate-600 text-sm">Ateliers pour définir vos objectifs puis création d’un planning éditorial personnalisé pour un mois.</p>
+      <p class="mt-2 text-slate-600 text-sm">Cet accompagnement vous permet de : planifier votre communication autour d’un fil conducteur clair et efficace sur 30 jours.</p>
+      <ul class="mt-2 text-slate-600 text-sm list-disc pl-5 space-y-1">
+        <li>Atelier sur mesure : définition des objectifs, thématiques & formats.</li>
+        <li>Planification clé en main : calendrier éditorial personnalisé, avec fréquence et supports proposés.</li>
+        <li>Organisation simplifiée : visibilité à 1 mois pour anticiper, répartir, booster votre temps.</li>
+      </ul>
       <button class="mt-4 px-4 py-2 rounded-lg bg-blue-600 text-white" onclick="closeModal('modal-calendrier')">Fermer</button>
     </div>
   </div>
-  <div id="modal-site" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 p-4">
-    <div class="bg-white p-6 rounded-xl max-w-md w-full">
+  <div id="modal-site" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black/50 p-4">
+    <div class="bg-white p-8 rounded-xl max-w-xl w-full">
       <h3 class="text-xl font-semibold">Création de site internet</h3>
-      <p class="mt-2 text-slate-600 text-sm">Conception, développement et mise en ligne d’un site léger optimisé pour convertir vos visiteurs.</p>
+      <p class="mt-2 text-slate-600 text-sm">Je vous livre : un site vitrine ou landing page prêt à convertir, moderne, léger et mobile-first.</p>
+      <ul class="mt-2 text-slate-600 text-sm list-disc pl-5 space-y-1">
+        <li>Design épuré & crédible : info essentielle, structure logique.</li>
+        <li>Appels à l’action visibles : formulaires courts pour faciliter la prise de contact ou réservation.</li>
+        <li>Performance assurée : chargement rapide + analytics intégrées + hébergement via GitHub Pages.</li>
+      </ul>
       <button class="mt-4 px-4 py-2 rounded-lg bg-blue-600 text-white" onclick="closeModal('modal-site')">Fermer</button>
     </div>
   </div>
@@ -247,21 +282,41 @@
         <h2 class="text-3xl font-bold tracking-tight">Études de cas</h2>
         <p class="mt-3 text-slate-600">Exemples anonymisés et indicateurs clés.</p>
       </header>
-      <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <div class="mt-8 grid md:grid-cols-2 gap-6">
         <article class="rounded-2xl border bg-white p-6 reveal">
-          <div class="text-xs uppercase text-slate-500">Restauration locale</div>
-          <h3 class="mt-1 font-semibold">+21% de commandes en 6 semaines</h3>
-          <p class="mt-2 text-sm text-slate-600">Campagnes Meta + optimisation fiche Google + réponses aux avis.</p>
+          <h3 class="font-semibold">🟩 Étude de cas 1 : Campagne promotionnelle – Génération de ventes</h3>
+          <p class="mt-2 text-sm text-slate-600"><strong>Contexte :</strong> À l’occasion d’une campagne de promotions sur une semaine, l’objectif était d’augmenter le trafic en restaurant et de générer un chiffre d’affaires additionnel, tout en maîtrisant la marge.</p>
+          <p class="mt-2 text-sm text-slate-600 font-medium">Stratégie mise en place :</p>
+          <ul class="mt-1 text-sm text-slate-600 list-disc pl-5 space-y-1">
+            <li>Création et diffusion de publicités ciblées sur Meta Ads (Facebook et Instagram) auprès d’une audience locale qualifiée.</li>
+            <li>Mise en avant de l’offre promotionnelle via des visuels impactants et un call-to-action clair.</li>
+            <li>Optimisation quotidienne des enchères et du budget pour maximiser le retour sur investissement.</li>
+          </ul>
+          <p class="mt-2 text-sm text-slate-600 font-medium">Résultats :</p>
+          <ul class="mt-1 text-sm text-slate-600 list-disc pl-5 space-y-1">
+            <li>600 € de chiffre d’affaires générés pour seulement 100 € investis en publicités.</li>
+            <li>ROI x6 sur la durée de la campagne.</li>
+            <li>Progression du PM (Panier Moyen) de +1,5 % durant la période.</li>
+            <li>Une marge maîtrisée, l’opération étant conçue pour attirer de nouveaux clients tout en restant profitable.</li>
+          </ul>
+          <p class="mt-2 text-sm text-slate-600">👉 Cette campagne démontre la capacité des publicités locales à générer rapidement du trafic et des ventes concrètes, avec un suivi précis des KPIs.</p>
         </article>
         <article class="rounded-2xl border bg-white p-6 reveal">
-          <div class="text-xs uppercase text-slate-500">Salle de sport</div>
-          <h3 class="mt-1 font-semibold">-42% de CPA en 30 jours</h3>
-          <p class="mt-2 text-sm text-slate-600">Refonte audiences Meta + créas UGC + formulaire simplifié.</p>
-        </article>
-        <article class="rounded-2xl border bg-white p-6 reveal">
-          <div class="text-xs uppercase text-slate-500">Commerce local</div>
-          <h3 class="mt-1 font-semibold">Visibilité x2 sur Google</h3>
-          <p class="mt-2 text-sm text-slate-600">Optimisation GMB + posts réguliers + 50 réponses aux avis en 1 mois.</p>
+          <h3 class="font-semibold">🟦 Étude de cas 2 : Campagne de recrutement – Attirer et convertir des candidats</h3>
+          <p class="mt-2 text-sm text-slate-600"><strong>Contexte :</strong> Face à des besoins de recrutement ponctuels, une campagne digitale a été lancée pour attirer rapidement des candidats qualifiés et faciliter le processus de sélection.</p>
+          <p class="mt-2 text-sm text-slate-600 font-medium">Stratégie mise en place :</p>
+          <ul class="mt-1 text-sm text-slate-600 list-disc pl-5 space-y-1">
+            <li>Publicités sponsorisées sur les réseaux sociaux ciblant des profils locaux correspondants aux critères recherchés.</li>
+            <li>Création d’un formulaire simple et optimisé pour maximiser les candidatures.</li>
+            <li>Suivi en temps réel des performances pour ajuster la diffusion et le ciblage.</li>
+          </ul>
+          <p class="mt-2 text-sm text-slate-600 font-medium">Résultats :</p>
+          <ul class="mt-1 text-sm text-slate-600 list-disc pl-5 space-y-1">
+            <li>150 € investis sur 10 jours.</li>
+            <li>12 candidatures qualifiées récupérées, correspondant aux besoins des restaurants.</li>
+            <li>2 embauches effectives réalisées grâce à la campagne.</li>
+          </ul>
+          <p class="mt-2 text-sm text-slate-600">👉 Avec un coût d’acquisition très compétitif, cette campagne a permis de transformer une problématique de recrutement en opportunité, en amenant directement des profils intéressés et disponibles.</p>
         </article>
       </div>
     </div>
