@@ -392,7 +392,9 @@
     <div class="mx-auto max-w-3xl px-4">
       <h2 class="text-3xl font-bold tracking-tight text-center">Contact</h2>
       <p class="mt-2 text-center text-slate-600">Expliquez votre besoin en 2 minutes et je reviens vers vous sous 24h.</p>
-      <form action="https://formspree.io/f/your-id" method="POST" class="mt-10 space-y-4 bg-slate-50 p-6 rounded-2xl border">
+      <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" class="mt-10 space-y-4 bg-slate-50 p-6 rounded-2xl border">
+        <input type="hidden" name="form-name" value="contact" />
+        <p class="hidden"><label>Ne pas remplir : <input name="bot-field" /></label></p>
         <div class="grid md:grid-cols-2 gap-4">
           <div>
             <label class="text-sm text-slate-600">Nom</label>
